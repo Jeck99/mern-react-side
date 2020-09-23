@@ -1,5 +1,5 @@
 import Add from "./add";
 import Edit from "./edit";
 import TableData from "./table";
-
-export {Add,Edit,TableData as Table}
+import BasicTable from "./mui-table"
+export {Add,Edit,TableData as Table,BasicTable }
