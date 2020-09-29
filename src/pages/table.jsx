@@ -43,7 +43,6 @@ class UpdateStudent extends React.Component {
 class DeleteStudent extends React.Component {
     deleteStudent = event => {
         event.preventDefault()
-
         if (
             window.confirm(
                 `Do you want to delete  this student permanently?`,
@@ -115,7 +114,7 @@ class TableData extends React.Component {
             {
                 Header: '',
                 accessor: '',
-                Cell: function (props) {
+                Cell:(props)=> {
                     return (
                         <span>
                             <UpdateStudent id={props.original._id} />
@@ -136,7 +135,7 @@ class TableData extends React.Component {
                         data={students}
                         columns={columns}
                         // loading={isLoading}
-                        defaultPageSize={10}
+                        defaultPageSize={5}
                         showPageSizeOptions={true}
                         minRows={0}
                     />

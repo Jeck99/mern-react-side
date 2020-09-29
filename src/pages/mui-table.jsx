@@ -1,5 +1,4 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
 import TableCell from '@material-ui/core/TableCell';
@@ -28,7 +27,7 @@ constructor(props){
         const { rows: rows } = this.state;
         return (
             <TableContainer component={Paper}>
-                <Table stickyHeader className="table" aria-label="simple table">
+                <Table stickyHeader className="table" size="small" aria-label="a dense table">
                     <TableHead>
                         <TableRow>
                             <TableCell>First Name</TableCell>
