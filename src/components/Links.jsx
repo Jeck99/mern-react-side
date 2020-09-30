@@ -25,7 +25,7 @@ class Links extends React.Component {
                             <Link to="/students/add" className="nav-link">Add</Link>
                         </Item>
                         <Item>
-                            <Link to="/students/edit" className="nav-link">Edit</Link>
+                            <Link to="/profile" className="nav-link">Profile</Link>
                         </Item>
                     </List>
                 </Collapse>

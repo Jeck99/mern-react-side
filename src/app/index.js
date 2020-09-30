@@ -19,7 +19,7 @@ function App() {
           <Route path="/students/add" exact component={Add} />
           <Route path="/students/edit/:id" exact component={Edit} />
           <Route path="/mui-table" exact component={BasicTable} />
-          <Route path="/Profile" exact component={Profile} />
+          <Route path="/profile" exact component={Profile} />
           {/* <Route path="/conatact-page" exact component={ContactPage} /> */}
         </Switch>
       </Auth0ProviderWithHistory>

@@ -3,7 +3,9 @@ import api from "../api";
 import styled from 'styled-components'
 import ReactTable from "react-table-6";
 import "react-table-6/react-table.css";
+import logo from "../../src/loading1.gif";
 
+import { withAuthenticationRequired } from "@auth0/auth0-react";
 const Wrapper = styled.div`
     padding: 0 40px 40px 40px;
 `
@@ -157,4 +159,6 @@ class TableData extends React.Component {
         // )
     }
 } 
-export default TableData;
+export default withAuthenticationRequired(TableData, {
+    onRedirecting: () => <div> <img width="500" height="500" src={logo} alt=" Loading ..." /></div>,
+  });
